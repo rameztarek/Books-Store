@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+:root {
+  --primary-blue: #0175c2;
+  --text-main: #202124;
+  --text-secondary: #5f6368;
+  --border-color: #dadce0;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+ul{
+  list-style: none;
+}
+li{
+  margin: 10px 0;
+}
+p{
+  margin: 20px;
+  font-size: 18px;
+}
+section{
+  padding: 100px 20px;
+}
+/* //////////// */
+
+header{}
+
+#nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--border-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+#nav-bar #logo{
+  font-weight: bold;
+  color: var(--primary-blue);
+}
+#nav-bar nav{}
+#nav-bar nav ul{
+  display: flex;
+}
+#nav-bar nav a{
+  margin: 0 15px;
+  font-size: 18px;
+  color: #333;
+  transition: all 0.3s ease;
+}#nav-bar nav a:hover{
+  color: var(--primary-blue);
+}
+/* /////////////////////// */
+#search{
+  display: flex;
+  align-items: center;
+}
+#search input{
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#search button{
+  padding: 8px 12px;
+  margin-left: 10px;
+  background-color: var(--primary-blue);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#search button:hover{
+  background-color: var(--primary-blue);
+}
+
+#coding{}
+#coding #whatAbout{}
+#coding #whatAbout h2{}
+#coding #books-container{
+
+}
+#coding #books-container #books-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+#coding #books-container #books-box #book{
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+#coding #books-container #books-box #book #book-img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+#coding #books-container #books-box #book #book-img:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}#coding #books-container #books-box #book #book-img img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+#coding #books-container #books-box #book #book-info{
+  margin-top: 15px;
+}
+#coding #books-container #books-box #book #book-price{
+  color: var(--primary-blue);
+  font-weight: bold;
+  margin-top: 10px;
+}
+#coding #books-container #books-box #book #book-info h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#coding #books-container #books-box #book #book-info p{
+  font-size: 16px;
+  color: #666;
+}
